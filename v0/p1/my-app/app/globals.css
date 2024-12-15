@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    /* Updated primary colors to match BESST navy blue */
+    --primary: 220 25% 23%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Updated secondary colors to match BESST gold/bronze */
+    --secondary: 37 27% 56%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Card and popover colors */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Muted colors using navy blue base */
+    --muted: 220 25% 95%;
+    --muted-foreground: 220 25% 40%;
+
+    /* Accent colors using gold/bronze */
+    --accent: 37 27% 90%;
+    --accent-foreground: 37 27% 20%;
+
+    /* Destructive and success colors */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* Border and input styling */
+    --border: 220 25% 90%;
+    --input: 220 25% 90%;
+    --ring: 37 27% 56%;
+
+    /* Radius */
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 220 25% 13%;
+    --foreground: 0 0% 100%;
+ 
+    --primary: 220 25% 23%;
+    --primary-foreground: 0 0% 100%;
+ 
+    --secondary: 37 27% 56%;
+    --secondary-foreground: 0 0% 100%;
+ 
+    --muted: 220 25% 23%;
+    --muted-foreground: 220 25% 70%;
+ 
+    --accent: 37 27% 30%;
+    --accent-foreground: 0 0% 100%;
+ 
+    --popover: 220 25% 13%;
+    --popover-foreground: 0 0% 100%;
+ 
+    --border: 220 25% 23%;
+    --input: 220 25% 23%;
+    --ring: 37 27% 56%;
+ 
+    --card: 220 25% 13%;
+    --card-foreground: 0 0% 100%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for the sidebar */
+.bg-sidebar {
+  background-color: #2B354D;
+}
+
+.bg-sidebar-header {
+  background-color: #B39B6D;
+}
+
+/* Custom button styles */
+.btn-primary {
+  background-color: #2B4D4D;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1F3A3A;
+}
+
